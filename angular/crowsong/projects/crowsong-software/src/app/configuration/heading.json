@@ -1,0 +1,15 @@
+{
+    "title": "Crowsong Software",
+    "styles": {
+        "border": "2px solid black",
+        "border-radius": "2vw",
+        "background": "radial-gradient(rgb(91,79,79), #9d9d98, rgb(187,187,181))",
+        "color": "black",
+        "font-family": "Arial",
+        "font-size": "3.5vw",
+        "font-weight": "600",
+        "margin": "2vw",
+        "padding": ".5vw",
+        "width": "auto"
+    }
+}

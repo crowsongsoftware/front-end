@@ -1,0 +1,436 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "@crowsong/image": {
+      "projectType": "library",
+      "root": "projects/crowsong/image",
+      "sourceRoot": "projects/crowsong/image/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/crowsong/image/tsconfig.lib.json",
+            "project": "projects/crowsong/image/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/crowsong/image/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/crowsong/image/src/test.ts",
+            "tsConfig": "projects/crowsong/image/tsconfig.spec.json",
+            "karmaConfig": "projects/crowsong/image/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/crowsong/image/tsconfig.lib.json",
+              "projects/crowsong/image/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }, 
+    "@crowsong/list": {
+      "projectType": "library",
+      "root": "projects/crowsong/list",
+      "sourceRoot": "projects/crowsong/list/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/crowsong/list/tsconfig.lib.json",
+            "project": "projects/crowsong/list/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/crowsong/list/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/crowsong/list/src/test.ts",
+            "tsConfig": "projects/crowsong/list/tsconfig.spec.json",
+            "karmaConfig": "projects/crowsong/list/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/crowsong/list/tsconfig.lib.json",
+              "projects/crowsong/list/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@crowsong/navigation": {
+      "projectType": "library",
+      "root": "projects/crowsong/navigation",
+      "sourceRoot": "projects/crowsong/navigation/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/crowsong/navigation/tsconfig.lib.json",
+            "project": "projects/crowsong/navigation/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/crowsong/navigation/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/crowsong/navigation/src/test.ts",
+            "tsConfig": "projects/crowsong/navigation/tsconfig.spec.json",
+            "karmaConfig": "projects/crowsong/navigation/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/crowsong/navigation/tsconfig.lib.json",
+              "projects/crowsong/navigation/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@crowsong/title": {
+      "projectType": "library",
+      "root": "projects/crowsong/title",
+      "sourceRoot": "projects/crowsong/title/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/crowsong/title/tsconfig.lib.json",
+            "project": "projects/crowsong/title/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/crowsong/title/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/crowsong/title/src/test.ts",
+            "tsConfig": "projects/crowsong/title/tsconfig.spec.json",
+            "karmaConfig": "projects/crowsong/title/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/crowsong/title/tsconfig.lib.json",
+              "projects/crowsong/title/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "crowsong-messaging": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/crowsong-messaging",
+      "sourceRoot": "projects/crowsong-messaging/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/crowsong-messaging",
+            "index": "projects/crowsong-messaging/src/index.html",
+            "main": "projects/crowsong-messaging/src/main.ts",
+            "polyfills": "projects/crowsong-messaging/src/polyfills.ts",
+            "tsConfig": "projects/crowsong-messaging/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/crowsong-messaging/src/favicon.ico",
+              "projects/crowsong-messaging/src/assets"
+            ],
+            "styles": [
+              "projects/crowsong-messaging/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/crowsong-messaging/src/environments/environment.ts",
+                  "with": "projects/crowsong-messaging/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "crowsong-messaging:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "crowsong-messaging:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "crowsong-messaging:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/crowsong-messaging/src/test.ts",
+            "polyfills": "projects/crowsong-messaging/src/polyfills.ts",
+            "tsConfig": "projects/crowsong-messaging/tsconfig.spec.json",
+            "karmaConfig": "projects/crowsong-messaging/karma.conf.js",
+            "assets": [
+              "projects/crowsong-messaging/src/favicon.ico",
+              "projects/crowsong-messaging/src/assets"
+            ],
+            "styles": [
+              "projects/crowsong-messaging/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/crowsong-messaging/tsconfig.app.json",
+              "projects/crowsong-messaging/tsconfig.spec.json",
+              "projects/crowsong-messaging/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/crowsong-messaging/e2e/protractor.conf.js",
+            "devServerTarget": "crowsong-messaging:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "crowsong-messaging:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "crowsong-software": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
+        "@schematics/angular:module": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/crowsong-software",
+      "sourceRoot": "projects/crowsong-software/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/crowsong-software",
+            "index": "projects/crowsong-software/src/index.html",
+            "main": "projects/crowsong-software/src/main.ts",
+            "polyfills": "projects/crowsong-software/src/polyfills.ts",
+            "tsConfig": "projects/crowsong-software/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/crowsong-software/src/favicon.ico",
+              "projects/crowsong-software/src/assets"
+            ],
+            "styles": [
+              "projects/crowsong-software/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/crowsong-software/src/environments/environment.ts",
+                  "with": "projects/crowsong-software/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "crowsong-software:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "crowsong-software:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "crowsong-software:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/crowsong-software/src/test.ts",
+            "polyfills": "projects/crowsong-software/src/polyfills.ts",
+            "tsConfig": "projects/crowsong-software/tsconfig.spec.json",
+            "karmaConfig": "projects/crowsong-software/karma.conf.js",
+            "assets": [
+              "projects/crowsong-software/src/favicon.ico",
+              "projects/crowsong-software/src/assets"
+            ],
+            "styles": [
+              "projects/crowsong-software/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/crowsong-software/tsconfig.app.json",
+              "projects/crowsong-software/tsconfig.spec.json",
+              "projects/crowsong-software/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/crowsong-software/e2e/protractor.conf.js",
+            "devServerTarget": "crowsong-software:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "crowsong-software:serve:production"
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "crowsong-software"
+}

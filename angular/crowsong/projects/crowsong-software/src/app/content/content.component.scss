@@ -1,0 +1,6 @@
+.grid-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns:9% 3% 75% 4% 9%;
+    justify-content: center;
+}

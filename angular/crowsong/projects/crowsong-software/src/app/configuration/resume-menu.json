@@ -1,0 +1,16 @@
+{
+    "resume-menu": [
+        {
+            "text": "MEAN",
+            "route": "mean"
+        },
+        {
+            "text": ".NET",
+            "route": "net"
+        },
+        {
+            "text": "Clear",
+            "route": "/resume"
+        }
+    ]
+}

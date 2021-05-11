@@ -1,0 +1,21 @@
+<section class="page">
+    <!--
+    <app-header
+        [title]="title" 
+        [titleStyles]="titleStyles">
+    </app-header>
+    -->
+
+
+    <app-menu
+        [containerStyles]="menuContainerStylesObj"
+        [items]="menuItems"> 
+    </app-menu>
+
+    <div class="email">{{email}}</div>
+    <div class="name">{{name}}</div>
+
+    <router-outlet></router-outlet>
+</section>
+
+<!--[containerStylesStr]="menuContainerStyles"-->
