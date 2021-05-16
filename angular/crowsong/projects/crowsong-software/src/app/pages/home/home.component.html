@@ -1,3 +1,14 @@
 <section class="page">
-    <!--<img [src]="logoImage"/>-->
+    <div class=grid-container>
+        <ng-container *ngFor='let card of cardCollection'>
+            <lib-card 
+                [titleStyles]='titleStyles' 
+                [cardStyles]='cardStyles'
+                [image]='card.image'
+                [title]='card.title'
+                [body]='card.body'
+                [footer]='card.footer'>
+            </lib-card>
+        </ng-container>
+    </div>
 </section>

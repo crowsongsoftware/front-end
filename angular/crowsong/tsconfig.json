@@ -38,7 +38,7 @@
         "dist/crowsong/title/crowsong-title",
         "dist/crowsong/title"
       ],
-      "@content":[
+      "@content": [
         "app/content"
       ],
       "@features": [
@@ -50,6 +50,10 @@
       "@crowsong/list": [
         "dist/crowsong/list/crowsong-list",
         "dist/crowsong/list"
+      ],
+      "@crowsong/card": [
+        "dist/crowsong/card/crowsong-card",
+        "dist/crowsong/card"
       ]
     }
   },

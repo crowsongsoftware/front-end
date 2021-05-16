@@ -1,0 +1,7 @@
+<div class='card' [style] = 'cardStyles'>
+    <h1 [style]='titleStyles'>{{title}}</h1>
+    <ng-container *ngFor='let item of body'>
+        <p>{{item}}</p>
+    </ng-container>
+    <p>{{footer}}</p>
+</div>
