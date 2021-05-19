@@ -1,15 +1,31 @@
+@import '../../../styles/partials/colors';
+
 page {
     box-sizing: border-box;
-}
+};
 
-.grid-container{
+section{
+    color: $rose_taupe;
+    font-size: 4vw;
+    font-family:cursive;
+};
+
+.first{
+    margin: 3vw 0 0 0;
+};
+
+.second{
+    padding: 3vw 0 0 4vw;
+};
+
+.third{
+    padding: 3vw 0 0 8vw;
+};
+
+.banner{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    column-gap: 5%;
-    padding: 5% 0 0 5%;
-    row-gap: 10%;
-}
-
-img{
-    border-radius: 10px;
-}
+    font-size: 1vw;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 30vh;
+    justify-items: center;
+};

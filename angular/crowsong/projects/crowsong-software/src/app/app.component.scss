@@ -1,7 +1,12 @@
+@import '../styles/partials/colors';
 .page {
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-image: url('/assets/images/crow-background.png');
     background-position: center;
     height: 100vh;
+};
+
+.header{
+    background: radial-gradient(white, black);
 }

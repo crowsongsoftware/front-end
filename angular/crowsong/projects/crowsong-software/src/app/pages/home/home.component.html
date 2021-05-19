@@ -1,14 +1,18 @@
-<section class="page">
-    <div class=grid-container>
-        <ng-container *ngFor='let card of cardCollection'>
-            <lib-card 
-                [titleStyles]='titleStyles' 
-                [cardStyles]='cardStyles'
-                [image]='card.image'
-                [title]='card.title'
-                [body]='card.body'
-                [footer]='card.footer'>
-            </lib-card>
-        </ng-container>
-    </div>
+<section class='page'>
+    <section class='first'>
+        <div>Angular Development</div>
+    </section>
+    <section class='second'>
+        <div>Express Server Development</div>
+    </section>
+    <section class='third'>
+        <div>Database Development</div>
+    </section>
+
+    <section class='banner'>
+        <a href='https://blacklivesmatter.com/'><img src='/assets/images/blm.png' alt='Black Lives Matter'></a>
+        <a href='https://www.aimovement.org/'><img src='/assets/images/aim_2.png' alt='American Indian Movement'></a>
+        <a href='https://stopaapihate.org/'><img src='/assets/images/aaip_1.png' alt='Stop Asian Hate'></a>
+        <a href='https://freepalestinemovement.org/'><img src='/assets/images/free_palestine_1.png' alt='Free Palestine'></a>
+    </section>
 </section>

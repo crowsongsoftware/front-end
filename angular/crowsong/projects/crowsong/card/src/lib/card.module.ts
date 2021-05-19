@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardComponent } from './card.component';
-
-
+import { CardComponent } from './card/card.component';
+import { CardContainerComponent } from './card-container/card-container.component';
 
 @NgModule({
-  declarations: [CardComponent],
+  declarations: [CardComponent, CardContainerComponent],
   imports: [
     CommonModule
   ],

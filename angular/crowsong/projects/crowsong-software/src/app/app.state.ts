@@ -31,7 +31,7 @@ export const appState: AppState = {
         containerStylesStr: '',
         containerStyles: {
             "border": "2px solid black",
-            "border-radius": "0 2vw 2vw 0",
+     //border-radius": "0 2vw 2vw 0",
             "background": "radial-gradient(rgb(91,79,79), #9d9d98, rgb(187,187,181))",
             "font-family": "Arial",
             "height": "5vh"
@@ -105,5 +105,3 @@ export const appState: AppState = {
     },
     title: 'Crowsong'
 };
-
-/*  "background": "radial-gradient(rgba(0,103,105,0.5), rgb(157,156,152), rgba(0,103,105,0.5))", */
