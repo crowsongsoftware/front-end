@@ -20,6 +20,7 @@ export type HeaderState = {
 
 export type AppState = {
     developmentServer: string;
+    featherImagePath: string;
     headerState: HeaderState;
     menuState: MenuState;
     title: string;
@@ -27,11 +28,11 @@ export type AppState = {
 
 export const appState: AppState = {
     developmentServer:  "api/app",
+    featherImagePath: "/assets/images/crow-feather-transparent.png",
     menuState: {
         containerStylesStr: '',
         containerStyles: {
             "border": "2px solid black",
-     //border-radius": "0 2vw 2vw 0",
             "background": "radial-gradient(rgb(91,79,79), #9d9d98, rgb(187,187,181))",
             "font-family": "Arial",
             "height": "5vh"

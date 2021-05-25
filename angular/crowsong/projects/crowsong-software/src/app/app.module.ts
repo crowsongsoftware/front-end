@@ -4,10 +4,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
+/* Crowsong Libraries */
+import { ImageModule } from '@crowsong/image';
 /* Crowsong Feature Modules */
 import { HeaderModule } from './features/header/header.module';
 import { MenuModule } from './features/menu/menu.module';
-import { ContentModule } from './content/content.module';
 
 /* App Modules/Services/Routes/Components */
 import { AppRoutes } from './app.routes'
@@ -23,10 +24,10 @@ import { InMemoryDataService } from './in-memory-data.service';
   ],
   imports: [
     BrowserModule,
-    ContentModule,
     HeaderModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false }),
+    ImageModule,
     MenuModule,
     RouterModule.forRoot(AppRoutes)
   ],

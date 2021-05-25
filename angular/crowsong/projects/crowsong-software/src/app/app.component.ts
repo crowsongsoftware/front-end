@@ -16,12 +16,14 @@ import { AppState, MenuItem } from './app.state';
   ]
 })
 export class AppComponent implements OnInit {
+  public featherImagePath: string = '';
   public headerImageStyles: string = '';
   public headerImageSrc: string = '';
   public menuContainerStylesObj: object = {};
   public menuContainerStylesStr: string = '';
   public menuItems: Array<MenuItem> = [];
-  
+  public visible: boolean = true;
+
   constructor(private _appService: AppService){
     this.getState();  
   };
@@ -30,6 +32,7 @@ export class AppComponent implements OnInit {
     let state: AppState = this._appService.State;
     this.setHeaderState(state);
     this.setMenuState(state);
+    this.setFeatherImagePath(state);
   };
 
   private setHeaderState(state: AppState){
@@ -42,6 +45,10 @@ export class AppComponent implements OnInit {
     this.menuContainerStylesStr = state.menuState.containerStylesStr;
     this.menuItems = state.menuState.menuItems;
   };
+
+  private setFeatherImagePath(state: AppState){
+    this.featherImagePath = state.featherImagePath;
+  }
   
   ngOnInit(){
     console.groupCollapsed("app/AppComponent");
@@ -56,6 +63,10 @@ export class AppComponent implements OnInit {
     console.log("menuContainerStylesObj: ", this.menuContainerStylesObj);
     console.log("menuContainerStylesStr: ", this.menuContainerStylesStr);
     console.log("menuItems: ", this.menuItems);
+    console.groupEnd();
+
+    console.groupCollapsed('Feather Image Path');
+    console.log("featherImagePath: ", this.featherImagePath);
     console.groupEnd();
     
     console.groupEnd();

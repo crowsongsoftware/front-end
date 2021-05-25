@@ -5,10 +5,27 @@
       [imgSrc]="headerImageSrc">
     </app-header>
   </section>
-
+    
   <app-menu
     [containerStyles]="menuContainerStylesObj"
     [items]="menuItems">
   </app-menu>
-  <app-content></app-content>
+
+  <section class=body>
+    <div class='side-bar-image'>
+      <lib-image [src]="featherImagePath"></lib-image>
+      <lib-image [src]="featherImagePath"></lib-image>
+      <lib-image [src]="featherImagePath"></lib-image>
+    </div>
+
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+
+    <div class='side-bar-image'>
+      <lib-image [src]="featherImagePath"></lib-image>
+      <lib-image [src]="featherImagePath"></lib-image>
+      <lib-image [src]="featherImagePath"></lib-image>
+    </div>
+  </section>
 </section>

@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { IntroductionService } from './introduction.service';
-import { IntroductionState } from './introduction.state';
+import { IntroductionState, Section } from './introduction.state';
 
 @Component({
   selector: 'app-introduction',
   templateUrl: './introduction.component.html',
   styleUrls: ['./introduction.component.scss']
 })
-export class IntroductionComponent implements OnInit {
+export class IntroductionComponent {
     public imageAlt:string = ''
     public imageClass: string = '';
     public imageHeight: string = '';
@@ -15,15 +15,22 @@ export class IntroductionComponent implements OnInit {
     public imageStyles: object = {};
     public imageWidth: string = '';
     public title: string = '';
+    public sections: Array<Section> = [];
     public titleStyles: object = {};
-    public introductionState: IntroductionState;
-    //public heading: string = '';
-    //public sections: Array<IntroductionState> = [];
-    //public paragraph: object = {};
-
+    
+    private state: IntroductionState;
+   
     constructor(private introductionService: IntroductionService) { 
-      this.introductionState = this.introductionService.getState();
+      this.state = this.introductionService.getState();
+      this.setTitle();
+      this.populateSections();
     };
 
-    ngOnInit(): void {};
-}
+    private setTitle(){
+      this.title = this.state.title;
+    }
+
+    private populateSections(){
+      this.sections = this.state.sections;
+    };
+};

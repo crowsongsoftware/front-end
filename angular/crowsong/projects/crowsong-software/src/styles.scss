@@ -12,4 +12,30 @@ $app-font-color: $black;
 body{
     background-color: $app-background-color;
     color: $app-font-color;
-}
+};
+
+app-print-introduction {
+    display: none;
+};
+  
+@media print {
+    app-header{
+        display: none;
+    };
+
+    app-display-introduction {
+        display: none;
+    };
+
+    app-menu{
+        display: none;
+    };
+
+    lib-image{
+        display: none;
+    };
+    
+    app-print-introduction {
+        display: block;
+    }; 
+};

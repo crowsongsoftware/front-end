@@ -14,10 +14,14 @@ import { resumeRoutes } from './resume.routes';
 
 /* Resume Components */
 import { ResumeComponent } from './resume.component';
+import { DisplayResumeComponent } from './display-resume/display-resume.component';
+import { PrintResumeComponent } from './print-resume/print-resume.component';
 
 @NgModule({
     declarations: [
-        ResumeComponent
+        ResumeComponent,
+        DisplayResumeComponent,
+        PrintResumeComponent
     ],
     imports: [
         CommonModule,
@@ -25,7 +29,9 @@ import { ResumeComponent } from './resume.component';
         MenuModule,
         RouterModule.forChild(resumeRoutes)
       ],
-    exports: [ ResumeComponent ],
+    exports: [ 
+        ResumeComponent 
+    ],
     providers:[
         ResumeService, 
         ResumeStore

@@ -4,7 +4,10 @@ import { CardComponent } from './card/card.component';
 import { CardContainerComponent } from './card-container/card-container.component';
 
 @NgModule({
-  declarations: [CardComponent, CardContainerComponent],
+  declarations: [
+    CardComponent, 
+    CardContainerComponent
+  ],
   imports: [
     CommonModule
   ],
