@@ -1,16 +1,23 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MenuState, Item } from './menu.state';
+import { Item } from './types/item';
 
 @Component({
   selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  templateUrl: './menu.component.html'
 })
 export class MenuComponent implements OnInit {
-  @Input() containerStyles: object = {};
+  @Input() containerStyles: string = '';
   @Input() items: Array<Item> = [];
 
-  constructor(){};
+  constructor(){ 
+    console.log('MenuComponent: constructor');
+  };
 
-  ngOnInit(): void{};
+  ngOnInit(){
+    //console.groupCollapsed('MenuComponent');
+    console.log('path: app/features/menu/');
+    console.log('containerStyles: ', this.containerStyles);
+    console.log('items: ', this.items);
+    //console.groupEnd();
+  };
 };

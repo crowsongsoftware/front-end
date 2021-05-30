@@ -1,27 +1,29 @@
-import { Component, Input } from '@angular/core';
-import { MenuItem } from '../resume.types';
+import { Component, Input,OnInit } from '@angular/core';
+import { MenuItem } from '../types/menu/menu-item';
 
 @Component({
   selector: 'app-display-resume',
   templateUrl: './display-resume.component.html',
   styleUrls: ['./display-resume.component.scss']
 })
-export class DisplayResumeComponent{
+export class DisplayResumeComponent implements OnInit{
     @Input() name: string = '';
     @Input() email: string = '';
     @Input() title: string = '';
-    @Input() titleStyles: string = '';
+    @Input() subTitle: string = '';
     @Input() menuContainerStyles: string = '';  
     @Input() menuItems: Array<MenuItem> = []; 
-    //@Input() titleStyles: object;
-    //@Input() menuContainerStylesObj: object;
-    constructor() { 
-      //this.name = this._state.name;
-      //this.email = this._state.email;
-      //this.title = this._state.title;
-      //this.titleStyles = this._state.titleStyles;
-      //this.menuContainerStylesObj = this._state.menuContainerStylesObj;
-      //this.menuContainerStyles = this._state.menuContainerStyles;
-      //this.menuItems = this._state.menuItems;
+    
+    constructor() { };
+
+    ngOnInit(){
+      console.groupCollapsed('DisplayResumeComponent');
+      console.log('Path: app/pages/resume/display-resume/');
+      console.log('name: ', this.name);
+      console.log('email: ', this.email);
+      console.log('title: ', this.title);
+      console.log('menuContainerStyles: ', this.menuContainerStyles);
+      console.log('menuItems: ', this.menuItems);
+      console.groupEnd();
     };
 }

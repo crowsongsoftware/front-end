@@ -1,4 +1,5 @@
-<section [ngStyle]="containerStyles" [style]="containerStylesStr">
+<section [style]="containerStyles">
+    <!-- Navigation Image (optional) -->
     <lib-image
         [alt]="imgAlt"
         [class]="imgClass"
@@ -11,23 +12,22 @@
         [width]="imgWidth">
     </lib-image>
 
+    <!-- Navigation Items -->
     <ng-container *ngFor="let item of items; trackBy: trackByFn">
         <ng-container *ngIf="item.isDropdown">
             <lib-dropdown-item
                 [image]="item.image"
                 [text]="item.text"
                 [route]="item.route"
-                [styles]="item.stylesStr">
+                [styles]="item.styles">
             </lib-dropdown-item>
         </ng-container>
         <ng-container *ngIf="!item.isDropdown">
             <navigation-item
                 [text]="item.text"
                 [route]="item.route"
-                [styles]="item.styles"
-                [stylesStr]=item.stylesStr>
+                [styles]="item.styles">
             </navigation-item>
-        </ng-container>
-            
+        </ng-container>        
     </ng-container>
 </section>

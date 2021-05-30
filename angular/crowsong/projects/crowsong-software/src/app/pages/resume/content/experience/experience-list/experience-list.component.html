@@ -1,0 +1,7 @@
+<ng-container *ngFor="let item of experience.summaries">
+    <div class="company">{{item.company}}</div>
+    <div class="position">{{item.position}}</div>
+    <ng-container *ngFor="let summary of item.summary">
+        <div class="summary">{{summary}}</div>
+    </ng-container>
+</ng-container>

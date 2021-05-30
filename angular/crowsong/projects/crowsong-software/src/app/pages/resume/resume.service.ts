@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ResumeState } from './resume.types';
+import { Resume } from './resume';
 import { resumeState } from './resume.state';
 import { ResumeStore } from './resume.store';
 
@@ -9,11 +9,11 @@ import { ResumeStore } from './resume.store';
       this.resumeStore.State = resumeState;
     };
     
-    public get State(): ResumeState{
+    public get State(): Resume{
       return this.resumeStore.State;
     };
 
-    public set State(state: ResumeState){
+    public set State(state: Resume){
       this.resumeStore.State = state;
     };
   }

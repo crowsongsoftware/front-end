@@ -4,7 +4,6 @@ import { ImageModule } from '@crowsong/image';
 import { NavigationModule } from '@crowsong/navigation';
 import { MenuComponent } from './menu.component';
 
-
 @NgModule({
   declarations: [MenuComponent],
   imports: [

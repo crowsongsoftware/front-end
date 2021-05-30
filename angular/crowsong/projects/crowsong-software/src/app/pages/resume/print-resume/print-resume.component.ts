@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MenuItem } from '../resume.types';
-
+import { MenuItem } from '../types/menu/menu-item';
 @Component({
   selector: 'app-print-resume',
   templateUrl: './print-resume.component.html',

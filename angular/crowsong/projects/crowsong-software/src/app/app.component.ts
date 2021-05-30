@@ -1,6 +1,9 @@
 /* Angular Core Components */
 import { Component, OnInit } from '@angular/core';
 
+/* NGX Logger */
+import { NGXLogger} from 'ngx-logger';
+
 /* App Service */
 import { AppService } from './app.service';
 import { AppStore } from './app.store';
@@ -19,12 +22,11 @@ export class AppComponent implements OnInit {
   public featherImagePath: string = '';
   public headerImageStyles: string = '';
   public headerImageSrc: string = '';
-  public menuContainerStylesObj: object = {};
-  public menuContainerStylesStr: string = '';
+  public menuContainerStyles: string = '';
   public menuItems: Array<MenuItem> = [];
-  public visible: boolean = true;
 
-  constructor(private _appService: AppService){
+  constructor(
+    private _appService: AppService, private logger: NGXLogger){
     this.getState();  
   };
 
@@ -41,35 +43,22 @@ export class AppComponent implements OnInit {
   };
 
   private setMenuState(state: AppState){
-    this.menuContainerStylesObj = state.menuState.containerStyles;
-    this.menuContainerStylesStr = state.menuState.containerStylesStr;
+    this.menuContainerStyles = state.menuState.containerStyles;
     this.menuItems = state.menuState.menuItems;
   };
 
   private setFeatherImagePath(state: AppState){
     this.featherImagePath = state.featherImagePath;
-  }
+  };
   
   ngOnInit(){
-    console.groupCollapsed("app/AppComponent");
-    /* Header Properties */
-    console.groupCollapsed("Header Properties");
-    console.log("headerImageStyles: ", this.headerImageStyles);
-    console.log("headerImageSrc: ", this.headerImageSrc);
-    console.groupEnd();
-    
-    /* Menu Properties */
-    console.groupCollapsed("Menu Properties");
-    console.log("menuContainerStylesObj: ", this.menuContainerStylesObj);
-    console.log("menuContainerStylesStr: ", this.menuContainerStylesStr);
-    console.log("menuItems: ", this.menuItems);
-    console.groupEnd();
-
-    console.groupCollapsed('Feather Image Path');
-    console.log("featherImagePath: ", this.featherImagePath);
-    console.groupEnd();
-    
-    console.groupEnd();
-
+    this.logger.debug('----------------');
+    this.logger.debug('- AppComponent -');
+    this.logger.debug('----------------');
+    this.logger.debug('featherImagePath: ', this.featherImagePath);
+    this.logger.debug('headerImageStyles: ', this.headerImageStyles);
+    this.logger.debug('headerImageSrc: ', this.headerImageSrc);
+    this.logger.debug('menuContainerStyles: ', this.menuContainerStyles);
+    this.logger.debug('menuItems: ', this.menuItems);
   };
 };

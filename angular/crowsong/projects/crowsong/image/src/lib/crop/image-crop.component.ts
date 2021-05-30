@@ -2,14 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-crop',
-  templateUrl: './image-crop.component.html',
-  styleUrls: ['./image-crop.component.css']
+  templateUrl: './image-crop.component.html'
 })
 export class ImageCropComponent implements OnInit {
 
-  constructor() { }
+  constructor() { };
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { };
 }

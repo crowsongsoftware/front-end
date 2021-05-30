@@ -14,28 +14,22 @@ body{
     color: $app-font-color;
 };
 
-app-print-introduction {
+app-print-introduction, 
+app-print-resume{
     display: none;
 };
   
 @media print {
-    app-header{
-        display: none;
-    };
-
-    app-display-introduction {
-        display: none;
-    };
-
-    app-menu{
-        display: none;
-    };
-
+    app-header, 
+    app-menu, 
+    app-display-introduction,
+    app-display-resume,
     lib-image{
         display: none;
     };
     
-    app-print-introduction {
+    app-print-introduction,
+    app-print-resume{
         display: block;
     }; 
 };

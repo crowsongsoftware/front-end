@@ -1,6 +1,5 @@
 /* Angular Core Modules */
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 /* Angular Services */
 import { Title } from '@angular/platform-browser';
@@ -11,7 +10,7 @@ import { AppState } from './app.state';
 
 @Injectable()
 export class AppService {
-  constructor( private _appStore: AppStore, private _titleService: Title, private _http: HttpClient ){
+  constructor(private _titleService: Title, private _appStore: AppStore){
     this._titleService.setTitle(this._appStore.State.title);
   };
 

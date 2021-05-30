@@ -3,11 +3,12 @@ import { Routes } from '@angular/router';
 import { ResumeComponent } from './resume.component';
 
 export const resumeRoutes: Routes = [
-    { path: '', component: ResumeComponent, pathMatch: 'prefix', children: [
-            { path: '', redirectTo: 'common', pathMatch: 'full'},
-            { path: 'common', loadChildren: () => import('./content/common/common-information.module').then(m => m.CommonInformationModule) },
-            { path: 'mean', loadChildren: () => import('./content/mean/mean.module').then(m => m.MeanModule) },
-            { path: 'net', loadChildren: () => import('./content/net/net.module').then(m => m.NetModule) }
+    { path: '', component: ResumeComponent,
+        children: [
+                { path: 'education', loadChildren: () => import('./content/education/education.module').then(m => m.EducationModule) },
+                { path: 'leadership', loadChildren: () => import('./content/leadership/leadership.module').then(m => m.LeadershipModule) },
+                { path: 'experience', loadChildren: () => import('./content/experience/experience.module').then(m => m.ExperienceModule) },
+                { path: 'skills', loadChildren: () => import('./content/skills/skills.module').then(m => m.SkillsModule) }
         ] 
     }
 ]

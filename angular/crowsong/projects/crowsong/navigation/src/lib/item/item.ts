@@ -3,6 +3,5 @@ export type Item = {
     image: string;
     text: string;
     route: string;
-    styles: object;
-    stylesStr: string;
+    styles: string;
 }

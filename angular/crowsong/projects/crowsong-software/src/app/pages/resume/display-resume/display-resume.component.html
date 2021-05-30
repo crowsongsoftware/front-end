@@ -1,1 +1,22 @@
-<p>display-resume works!</p>
+<section class="page">
+    <app-menu
+        [containerStyles]="menuContainerStyles"
+        [items]="menuItems"> 
+    </app-menu>
+
+    <!-- app-header ? -->
+    <section class=heading>
+        <section class='heading-grid'>
+            <section class=spacer></section>
+            <section>
+                <div class="heading-large">{{name}}</div>
+                <div class="heading-medium">{{title}}</div> 
+                <div class="heading-medium">{{subTitle}}</div>
+                <div class="heading-medium">{{email}}</div>
+            </section>
+        </section>
+    </section>
+    
+    <router-outlet></router-outlet>
+</section>
+

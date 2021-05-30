@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
+/* NGX Logger */
+import { LoggerModule } from 'ngx-logger';
+import { appLogger } from './app.logger';
+
 /* Crowsong Libraries */
 import { ImageModule } from '@crowsong/image';
 /* Crowsong Feature Modules */
@@ -29,6 +33,7 @@ import { InMemoryDataService } from './in-memory-data.service';
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false }),
     ImageModule,
     MenuModule,
+    LoggerModule.forRoot(appLogger),
     RouterModule.forRoot(AppRoutes)
   ],
   bootstrap: [AppComponent]
