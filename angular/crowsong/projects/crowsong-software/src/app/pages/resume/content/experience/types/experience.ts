@@ -1,9 +1,7 @@
-import { ExperienceDetail } from "./experienceDetail";
-import { ExperienceSummary } from "./experienceSummary";
-
 export type Experience = {
-    title: string;
-    titleStyles: string;
-    summaries: Array<ExperienceSummary>;
-    details: Array<ExperienceDetail>;
+    company: string;
+    position: string;
+    fromDate: string;
+    toDate: string;
+    details: Array<string>;
 };

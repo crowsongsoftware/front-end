@@ -15,18 +15,6 @@ export const resumeState: Resume = {
                     margin: .5vw;
                     padding: .1vw;
                 `
-            },            {
-                image: '',
-                isDropdown: false,
-                text: "Leadership",
-                route: "/resume/leadership",
-                styles: `
-                    color: black;
-                    display:inline-block;
-                    font-size: 1.75vw;
-                    margin: .5vw;
-                    padding: .1vw;
-                `
             },
             {
                 image: '',
@@ -46,6 +34,18 @@ export const resumeState: Resume = {
                 isDropdown: false,
                 text: "Skills",
                 route: "/resume/skills",
+                styles: `
+                    color: black;
+                    display:inline-block;
+                    font-size: 1.75vw;
+                    margin: .5vw;
+                    padding: .1vw;
+                `
+            },            {
+                image: '',
+                isDropdown: false,
+                text: "Leadership",
+                route: "/resume/leadership",
                 styles: `
                     color: black;
                     display:inline-block;

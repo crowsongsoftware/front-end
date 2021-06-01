@@ -1,4 +1,6 @@
 export type ExperienceDetail = {
-    heading:string;
-    detailList: Array<string>;
+    heading: string;
+    company: string;
+    position: string;
+    details: Array<string>;
 };

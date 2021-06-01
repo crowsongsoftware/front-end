@@ -1,5 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ExperienceService } from './experience.service';
+import { ExperienceState } from './experience.state';
 import { Experience } from './types/experience';
+import { ExperienceListComponent } from './experience-list/experience-list.component';
+import { ExperienceDetailsComponent } from './experience-details/experience-details.component';
 
 @Component({
   selector: 'experience',
@@ -7,16 +11,13 @@ import { Experience } from './types/experience';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
-    @Input() experience: Experience = { title: '', titleStyles: '', summaries: [], details: []};  
-    
-    constructor() {};
+    public title: string = '';
+    public experience: Array<Experience> = [];
 
-    ngOnInit(): void {
-      console.groupCollapsed("page/resume/sections/experience/ExperienceComponent")
-      console.log("Title: ", this.experience.title);
-      console.log("Title Styles: ", this.experience.titleStyles);
-      console.log("Summaries: ", this.experience.summaries);
-      console.log("Details: ", this.experience.details);
-      console.groupEnd();
+    constructor(private experienceService: ExperienceService) {
+      this.title = this.experienceService.State.title;
+      this.experience = this.experienceService.State.experienceList;
     };
+
+    ngOnInit(): void { };
 };

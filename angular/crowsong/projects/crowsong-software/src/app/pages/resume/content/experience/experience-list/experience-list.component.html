@@ -1,7 +1,41 @@
-<ng-container *ngFor="let item of experience.summaries">
+<!-- Table markup-->
+<table id="table">
+
+    <!-- Table header -->
+        <thead>
+            <tr class=header-row>
+                <td scope="col" class="header-row" id="header-company">Company</td>
+                <td scope="col" class="header-row" id="header-position">Position</td>
+                <td scope="col" class="header-row" id="header-from-date">From Date</td>
+                <td scope="col" class="header-row" id="header-to-date">To Date</td>
+                <td scope="col" class="header-row" id="header-details"></td>
+            </tr>
+        </thead>
+    
+    <!-- Table footer -->
+        <tfoot>
+            <tr>
+                  <td></td>
+            </tr>
+        </tfoot>
+
+    <!-- Table body -->
+    <ng-container *ngFor="let item of experience">
+        <tbody>
+            <tr>
+                <td scope="col" class="data-row" id="company">{{item.company}}</td>
+                <td scope="col" class="data-row" id="position">{{item.position}}</td>
+                <td scope="col" class="data-row" id="fromDate">{{item.fromDate}}</td>
+                <td scope="col" class="data-row" id="toDate">{{item.toDate}}</td>
+                <td scope="col" class="data-row" id="details">Details</td>
+            </tr>
+        </tbody>
+    </ng-container>
+</table>
+
+<!--
+<ng-container *ngFor="let item of experience">
     <div class="company">{{item.company}}</div>
     <div class="position">{{item.position}}</div>
-    <ng-container *ngFor="let summary of item.summary">
-        <div class="summary">{{summary}}</div>
-    </ng-container>
 </ng-container>
+-->

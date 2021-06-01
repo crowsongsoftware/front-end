@@ -1,20 +1,20 @@
 <section class="page">
     <!-- app-header-->
     <section class="header">
-        <div class="title">Experience</div>
+        <div class="title">{{title}}</div>
     </section>
+
+    <experience-list
+        [experience]="experience">
+    </experience-list>
 </section>
-
-
 <!--
 <app-header
     [title]="experience.title"
     [titleStyles]="experience.titleStyles">
 </app-header>
 
-<resume-experience-list
-    [experience]="experience">
-</resume-experience-list>    
+
 -->
 
 
