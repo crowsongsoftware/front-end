@@ -1,17 +1,19 @@
-/* Angular Core Modules */
 import { Injectable } from '@angular/core';
-
-/* Angular Services */
 import { Title } from '@angular/platform-browser';
-
-/* App State Management */
+import { NGXLogger } from 'ngx-logger';
 import { AppStore } from './app.store';
 import { AppState } from './app.state';
 
 @Injectable()
 export class AppService {
-  constructor(private _titleService: Title, private _appStore: AppStore){
-    this._titleService.setTitle(this._appStore.State.title);
+  constructor(private _titleService: Title, 
+              private _appStore: AppStore,
+              private _logger: NGXLogger){
+      this._logger.debug('----------------');
+      this._logger.debug('- AppService -');
+      this._logger.debug('----------------');
+      this._logger.debug('Title: ', this._appStore.State.title);
+      this._titleService.setTitle(this._appStore.State.title);
   };
 
   public get State(): AppState{

@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 /* NGX Logger */
-import { LoggerModule } from 'ngx-logger';
+import { LoggerModule, NGXLogger } from 'ngx-logger';
 import { appLogger } from './app.logger';
 
 /* Crowsong Libraries */
@@ -38,4 +38,10 @@ import { InMemoryDataService } from './in-memory-data.service';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private logger: NGXLogger){
+    this.logger.debug('----------------');
+    this.logger.debug('- AppModule -');
+    this.logger.debug('----------------');
+  }
+ }
