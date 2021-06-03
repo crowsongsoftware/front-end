@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NGXLogger } from 'ngx-logger';
 import { EducationService } from './education.service';
 import { Institution } from './institution/institution';
 
@@ -8,17 +9,29 @@ import { Institution } from './institution/institution';
   styleUrls: ['./education.component.scss']
 })
 export class EducationComponent implements OnInit {
-    public title: string;
-    public titleStyles: string;
+    public title: string = '';
+    public titleStyles: string = '';
     public institutions: Array<Institution> = [];
 
-    constructor(private educationService: EducationService) { 
-        this.title = this.educationService.State.title;
-        this.titleStyles = this.educationService.State.titleStyles;
-        this.institutions = this.educationService.State.institutions;
+    private setState(){
+      this.title = this.educationService.State.title;
+      this.titleStyles = this.educationService.State.titleStyles;
+      this.institutions = this.educationService.State.institutions;
+    };
+
+    private log(){
+      this.logger.debug('-------------------');
+      this.logger.debug('- EducationComponent -');
+      this.logger.debug('-------------------');
+      this.logger.debug('title: ', this.title);
+      this.logger.debug('titleStyles: ', this.titleStyles);
+      this.logger.debug('institutions: ', this.institutions);
+    };
+    constructor(private educationService: EducationService, private logger: NGXLogger) { 
+      this.setState();
     };
 
     ngOnInit() {
-      
+      this.log();
     };
 };

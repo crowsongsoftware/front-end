@@ -1,8 +1,8 @@
-import { NgModule, OnInit } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { NGXLogger } from 'ngx-logger';
 import { HeaderModule } from '../../../../features/header/header.module';
-import { LoggerModule, NGXLogger } from 'ngx-logger';
 import { EducationService } from './education.service';
 import { EducationStore } from './education.store';
 import { educationRoutes } from './education.routes';
@@ -17,7 +17,6 @@ import { InstitutionComponent } from './institution/institution.component';
   imports: [
     CommonModule,
     HeaderModule,
-    LoggerModule,
     RouterModule.forChild(educationRoutes)
   ],
   exports: [
@@ -28,13 +27,9 @@ import { InstitutionComponent } from './institution/institution.component';
     EducationStore
   ]
 })
-export class EducationModule implements OnInit { 
+export class EducationModule{ 
   constructor(private logger: NGXLogger){
-    console.log('Education Module: constructor');
-  };
-
-  ngOnInit(){
-    //console.clear();
+    console.clear();
     this.logger.debug('-------------------');
     this.logger.debug('- EducationModule -');
     this.logger.debug('-------------------');
