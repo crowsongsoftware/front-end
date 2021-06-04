@@ -1,15 +1,9 @@
-<div class='page'>
+<section class='page'>
     <div class='services'>
-        <div class='first'>Angular Development</div>
-        <div class='second'>Express Server Development</div>
-        <div class='third'>Database Development</div>
+        <div *ngFor="let item of services; index as i" class="service-{{i}}">{{item}}</div>    
     </div>
 
     <div class='banner'>
-        <a href='https://blacklivesmatter.com/'><img src='/assets/images/blm.png' alt='Black Lives Matter'></a>
-        <a href='https://www.aimovement.org/'><img src='/assets/images/aim_2.png' alt='American Indian Movement'></a>
-        <a href='https://mmiwusa.org/'><img src='/assets/images/mmiw.jpg' alt='Missing and Murdered Indigenous Women'></a>
-        <a href='https://stopaapihate.org/'><img src='/assets/images/aaip_1.png' alt='Stop Asian Hate'></a>
-        <a href='https://freepalestinemovement.org/'><img src='/assets/images/free_palestine_1.png' alt='Free Palestine'></a>
+        <a *ngFor="let item of banner; index as i" href="{{item.url}}"><img src="{{item.imgSrc}}" alt="{{item.imgAlt}}"></a>
     </div>
-</div>
+</section>

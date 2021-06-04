@@ -6,11 +6,11 @@ import { HomeStore } from './home.store';
 export class HomeService{
     constructor(private homeStore: HomeStore){ };
     
-    public setState(state: HomeState){
+    public set State(state: HomeState){
         this.homeStore.State = state;
     };
 
-    public getState(): HomeState{
+    public get State(): HomeState{
         return this.homeStore.State;
     };
 };
