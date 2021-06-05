@@ -8,11 +8,13 @@ import { EducationStore } from './education.store';
 import { educationRoutes } from './education.routes';
 import { EducationComponent } from './education.component';
 import { InstitutionComponent } from './institution/institution.component';
+import { EducationListComponent } from './education-list/education-list.component';
 
 @NgModule({
   declarations: [
     EducationComponent,
-    InstitutionComponent
+    InstitutionComponent,
+    EducationListComponent
   ],
   imports: [
     CommonModule,

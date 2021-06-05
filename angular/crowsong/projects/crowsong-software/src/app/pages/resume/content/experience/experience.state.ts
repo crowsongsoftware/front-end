@@ -2,11 +2,18 @@ import { Experience } from "./types/experience";
 
 export type ExperienceState = {
     title: string;
+    header: Array<string>;
     experienceList: Array<Experience>;
 };
 
 export const defaultState: ExperienceState = {
     title: "Experience",
+    header: [
+        "Company",
+        "Position",
+        "From",
+        "To"
+    ],
     experienceList: [
         {
             company: "Crowsong Software",

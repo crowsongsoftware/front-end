@@ -9,7 +9,8 @@ import { ExperienceSummary } from '../types/experienceSummary';
   styleUrls: ['./experience-list.component.scss']
 })
 export class ExperienceListComponent implements OnInit {
-  @Input() experience: Array<Experience> = [];
+  @Input() public header: Array<string> = [];
+  @Input() public experienceList: Array<Experience> = [];
   
   constructor() {};
 
