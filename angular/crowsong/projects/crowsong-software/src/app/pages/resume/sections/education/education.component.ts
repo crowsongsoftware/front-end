@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NGXLogger } from 'ngx-logger';
 import { EducationService } from './education.service';
-import { Institution } from './institution/institution';
+import { Institution } from './presentation/institution/institution';
 
 @Component({
   selector: 'education',
@@ -15,7 +15,6 @@ export class EducationComponent implements OnInit {
 
     private setState(){
       this.title = this.educationService.State.title;
-      this.titleStyles = this.educationService.State.titleStyles;
       this.institutions = this.educationService.State.institutions;
     };
 
@@ -24,7 +23,6 @@ export class EducationComponent implements OnInit {
       this.logger.debug('- EducationComponent -');
       this.logger.debug('-------------------');
       this.logger.debug('title: ', this.title);
-      this.logger.debug('titleStyles: ', this.titleStyles);
       this.logger.debug('institutions: ', this.institutions);
     };
     constructor(private educationService: EducationService, private logger: NGXLogger) { 

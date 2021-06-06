@@ -3,15 +3,14 @@ import { NGXLogger } from 'ngx-logger';
 import { MenuItem } from '../types/menu/menu-item';
 
 @Component({
-  selector: 'app-display-resume',
-  templateUrl: './display-resume.component.html',
-  styleUrls: ['./display-resume.component.scss']
+  selector: 'display-resume',
+  templateUrl: './display-resume.component.html'
 })
 export class DisplayResumeComponent implements OnInit{
     @Input() name: string = '';
     @Input() email: string = '';
     @Input() title: string = '';
-    @Input() subTitle: string = '';
+    @Input() subtitle: string = '';
     @Input() menuContainerStyles: string = '';  
     @Input() menuItems: Array<MenuItem> = []; 
     
@@ -22,7 +21,7 @@ export class DisplayResumeComponent implements OnInit{
       this.logger.debug('name: ', this.name);
       this.logger.debug('email: ', this.email);
       this.logger.debug('title: ', this.title);
-      this.logger.debug('subTitle: ', this.subTitle);
+      this.logger.debug('subTitle: ', this.subtitle);
       this.logger.debug('menuContainerStyles: ', this.menuContainerStyles);
       this.logger.debug('menuItems: ', this.menuItems);
     };
@@ -30,6 +29,6 @@ export class DisplayResumeComponent implements OnInit{
     constructor(private logger: NGXLogger) { };
 
     ngOnInit(){
-      this.log();
+      //this.log();
     };
 }

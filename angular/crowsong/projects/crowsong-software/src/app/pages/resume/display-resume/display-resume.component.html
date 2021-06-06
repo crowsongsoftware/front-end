@@ -4,18 +4,12 @@
         [items]="menuItems"> 
     </app-menu>
 
-    <!-- app-header ? -->
-    <section class=heading>
-        <section class='heading-grid'>
-            <section class=spacer></section>
-            <section>
-                <div class="heading-large">{{name}}</div>
-                <div class="heading-medium">{{title}}</div> 
-                <div class="heading-medium">{{subTitle}}</div>
-                <div class="heading-medium">{{email}}</div>
-            </section>
-        </section>
-    </section>
+    <heading
+        [email]="email"
+        [name]="name"
+        [subtitle]= "subtitle"
+        [title]="title">
+    </heading>
     
     <router-outlet></router-outlet>
 </section>

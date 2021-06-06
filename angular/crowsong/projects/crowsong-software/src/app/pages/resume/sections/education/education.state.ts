@@ -1,8 +1,9 @@
 import { Education } from "./education";
 
 export const educationState: Education = {
-    title: "Education",
-    titleStyles: "font-size:1.75vw",
+    title: `Education`,
+    titleStyles: `font-size: 1.75vw;
+                  padding: .5vw;`,
     institutions: [
         {
             name: "Pikes Peak Community College",
