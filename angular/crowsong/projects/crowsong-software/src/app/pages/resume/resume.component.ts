@@ -39,6 +39,10 @@ export class ResumeComponent implements OnInit {
       this.logger.debug("menuItems: ", this.menuItems);
     };
 
+    public print(){
+      window.print();
+    };
+    
     constructor( private resumeService: ResumeService, private logger: NGXLogger) { 
       this.setState();
     };

@@ -1,4 +1,4 @@
-import { Component, Input,OnInit } from '@angular/core';
+import { Component, EventEmitter, Input,OnInit, Output } from '@angular/core';
 import { NGXLogger } from 'ngx-logger';
 import { MenuItem } from '../types/menu/menu-item';
 
@@ -13,6 +13,14 @@ export class DisplayResumeComponent implements OnInit{
     @Input() subtitle: string = '';
     @Input() menuContainerStyles: string = '';  
     @Input() menuItems: Array<MenuItem> = []; 
+
+    @Output() onPrint: EventEmitter<any> = new EventEmitter();
+
+    constructor(private logger: NGXLogger) { };
+    
+    private print(){
+      this.onPrint.emit();
+    };
     
     private log(){
       this.logger.debug('-------------------');
@@ -26,7 +34,7 @@ export class DisplayResumeComponent implements OnInit{
       this.logger.debug('menuItems: ', this.menuItems);
     };
 
-    constructor(private logger: NGXLogger) { };
+    
 
     ngOnInit(){
       //this.log();
