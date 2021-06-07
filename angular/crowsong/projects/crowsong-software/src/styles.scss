@@ -14,22 +14,22 @@ body{
     color: $app-font-color;
 };
 
-app-print-introduction, 
-app-print-resume{
+print-introduction, 
+print-resume{
     display: none;
 };
   
 @media print {
     app-header, 
     app-menu, 
-    app-display-introduction,
-    app-display-resume,
+    display-introduction,
+    display-resume,
     lib-image{
         display: none;
     };
     
-    app-print-introduction,
-    app-print-resume{
+    print-introduction,
+    print-resume{
         display: block;
     }; 
 };

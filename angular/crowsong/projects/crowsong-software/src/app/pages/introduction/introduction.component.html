@@ -1,10 +1,11 @@
    
-<app-display-introduction
+<display-introduction
+    [title]='title'
+    [sections]='sections'
+    (onPrint)='print()'>
+</display-introduction>
+<print-introduction
     [title]='title'
     [sections]='sections'>
-</app-display-introduction>
-<app-print-introduction
-    [title]='title'
-    [sections]='sections'>
-</app-print-introduction>
+</print-introduction>
 

@@ -33,4 +33,9 @@ export class IntroductionComponent {
     private populateSections(){
       this.sections = this.state.sections;
     };
+
+    public print(){
+      console.log("Printing...");
+      window.print();
+    };
 };
