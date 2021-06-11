@@ -14,12 +14,12 @@ export class DisplayResumeComponent implements OnInit{
     @Input() menuContainerStyles: string = '';  
     @Input() menuItems: Array<MenuItem> = []; 
 
-    @Output() onPrint: EventEmitter<any> = new EventEmitter();
+    @Output() onSelectSections: EventEmitter<any> = new EventEmitter();
 
     constructor(private logger: NGXLogger) { };
     
-    private print(){
-      this.onPrint.emit();
+    private selectSections(){
+      this.onSelectSections.emit();
     };
     
     private log(){

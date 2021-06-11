@@ -4,12 +4,7 @@
     [title]='title'
     [subtitle]='subtitle'
     [menuContainerStyles]='menuContainerStyles'
-    [menuItems]='menuItems'
-    (onPrint)="print">
+    [menuItems]='menuItems'>
 </display-resume>
-<print-resume
-    [name]='name' 
-    [email]='email'
-    [title]='title'
-    [subtitle]='subtitle'>
-</print-resume>
+
+<router-outlet></router-outlet>

@@ -58,7 +58,7 @@ export const resumeState: Resume = {
                 image: '',
                 isDropdown: false,
                 text: "Print",
-                route: "",
+                route: "/resume/select-sections",
                 styles: `
                     color: maroon;
                     display:inline-block;

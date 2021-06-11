@@ -9,15 +9,13 @@ import { ResumeStore } from './resume.store';
 import { resumeRoutes } from './resume.routes';
 import { ResumeComponent } from './resume.component';
 import { DisplayResumeComponent } from './display-resume/display-resume.component';
-import { PrintResumeComponent } from './print-resume/print-resume.component';
 import { HeadingComponent } from './sections/heading/heading.component';
 
 @NgModule({
     declarations: [
-        ResumeComponent,
         DisplayResumeComponent,
-        PrintResumeComponent,
-        HeadingComponent
+        HeadingComponent,
+        ResumeComponent
     ],
     imports: [
         CommonModule,
