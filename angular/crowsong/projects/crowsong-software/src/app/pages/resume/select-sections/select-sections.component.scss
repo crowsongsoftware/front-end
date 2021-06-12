@@ -5,9 +5,15 @@
     border-radius: 5px;
 };
 
+label{
+    font-size: 1.50vw;
+    margin: 0 1.25vw 0 1.25vw;
+};
+
 table { 
     width: 10%; 
     border-collapse: collapse;
+    margin: 2.0vw;
   };
 
 td{ 
@@ -19,11 +25,14 @@ text-align: left;
 input{
     height: 1.50vw;
     width: 1.50vw;
-}
-
-.header-row{
-    font-size: 1.50vw;
 };
+
+button{
+    font-size: 1vw;
+    margin: 2vw 0 2vw 5vw;
+    width: 5vw;
+    height: 1.75vw;
+}
 
 .data-row{
     font-size: 1.75vw;

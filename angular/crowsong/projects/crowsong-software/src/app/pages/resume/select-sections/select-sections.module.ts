@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HeaderModule } from '../../../features/header/header.module'; 
 import { SelectSectionsRoutes} from './select-sections.routes';
 import { SelectSectionsComponent } from './select-sections.component';
@@ -16,7 +16,6 @@ import { SelectSectionStore } from './select-sections.store';
     CommonModule,
     FormsModule,
     HeaderModule,
-    ReactiveFormsModule,
     RouterModule.forChild(SelectSectionsRoutes)
   ],
   exports: [

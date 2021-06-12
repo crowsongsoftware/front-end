@@ -4,34 +4,22 @@
       [title]="title"
       [titleStyles]="titleStyles">
   </app-header>
-
-  <table id="table">
-    <thead></thead>
-    <tfoot></tfoot>
-    <tbody>
-      <tr>
-        <td class="data-row">Heading</td>
-        <td class="data-row"><input type="checkbox" checked (change)="onCheckboxChange($event)" /></td>
-      </tr>
-      <tr>
-        <td class="data-row">Education</td>
-        <td class="data-row"><input type="checkbox" (change)="onCheckboxChange($event)" /></td>
-      </tr>
-      <tr>
-        <td class="data-row">Experience</td>
-        <td class="data-row"><input type="checkbox" (change)="onCheckboxChange($event)" /></td>
-      </tr>
-      <tr>
-        <td class="data-row">Skills</td>
-        <td class="data-row"><input type="checkbox" (change)="onCheckboxChange($event)" /></td>
-      </tr>
-      <tr>
-        <td class="data-row">Leadership</td>
-        <td class="data-row"><input type="checkbox" (change)="onCheckboxChange($event)" /></td>
-      </tr>
-    </tbody>
-  </table>
-    <button>Select</button>
+  
+  <label for="check-all">Check All</label><input name="check-all" type="checkbox" (change)="onCheckboxChange($event)" />
+  
+  <form #selectSectionsForm="ngForm" (ngSubmit)="print(selectSectionsForm)">
+    <table id="table">
+      <thead></thead>
+      <tfoot></tfoot>
+      <tbody>
+        <tr *ngFor="let item of sectionList">
+          <td class="data-row">{{item.title}}</td>
+          <td class="data-row"><input type="checkbox" [name]="item.name" [checked]="item.checked" ngModel (change)="onCheckboxChange($event)"/></td>
+        </tr>
+      </tbody>
+    </table>
+      <button  type="submit">Print</button>   
+  </form>
 </section>
 
 <!-- <input type="checkbox" [value]="web.id" (change)="onCheckboxChange($event)" /> -->

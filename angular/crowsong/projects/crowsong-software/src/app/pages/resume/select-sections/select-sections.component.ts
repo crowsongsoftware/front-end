@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormControl, Validators, FormArray} from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { SelectSectionService } from './select-section.service';
+import { Section } from './select-sections.state';
 
 @Component({
   templateUrl: './select-sections.component.html',
@@ -9,29 +10,32 @@ import { SelectSectionService } from './select-section.service';
 export class SelectSectionsComponent implements OnInit{
   public title: string = '';
   public titleStyles: string = '';
-  public form: FormGroup = this.formBuilder.group({});
+  public sectionList: Array<Section> = [];
   
   private setState(){
     let state = this.selectSectionService.State;
     this.title = state.title;
     this.titleStyles = state.titleStyles;
+    this.sectionList = state.sectionList;
   };
 
   private log(){
-    console.log('form: ', this.form);
     console.log('title: ', this.title);
     console.log('titleStyles: ', this.titleStyles);
+    console.log('sectionList: ', this.sectionList);
   };
 
-  public onCheckboxChange(value: Event){
+  public onCheckboxChange(event: Event){
+    console.log('Checkbox Changed....Event: ', event);
+  };
 
-  }
-
-  public print(){
+  public print(form: NgForm){
+    
+    console.log('Submitted form: ', form.value);
     window.print();
   };
 
-  constructor(private selectSectionService: SelectSectionService, private formBuilder: FormBuilder) {
+  constructor(private selectSectionService: SelectSectionService) {
     this.setState();
    };
 
