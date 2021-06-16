@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NGXLogger } from 'ngx-logger';
 import { EducationService } from './education.service';
-import { Institution } from './presentation/institution/institution';
+import { Institution } from './institution/institution';
 
 @Component({
   selector: 'education',

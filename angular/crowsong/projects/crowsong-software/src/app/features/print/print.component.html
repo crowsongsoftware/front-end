@@ -1,0 +1,19 @@
+<!-- 
+    Show when media != print
+     
+-->
+<select-sections>
+
+</select-sections>
+
+<!-- 
+    Hide when media != print
+    Show when media=print 
+-->
+<section class="print">
+    <p>print works!</p>
+    <section *ngFor="let section of sections">
+        <div>{{section}}</div>
+    </section>
+</section>
+

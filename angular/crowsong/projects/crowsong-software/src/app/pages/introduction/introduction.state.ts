@@ -4,36 +4,36 @@ export type Section = {
 };
 
 export type IntroductionState = {
-    imageAlt: string;
-    imageClass: string;
-    imageHeight: string;
-    imagePath: string;
-    imageStyles: object;
-    imageWidth: string;
+    //imageAlt: string;
+    //imageClass: string;
+    //imageHeight: string;
+    //imagePath: string;
+    //imageStyles: object;
+    //imageWidth: string;
     title: string;
     titleStyles: object;
     sections: Array<Section>;
 };
 
 export const defaultState:IntroductionState = {
-    imageAlt: '',
-    imageClass: '',
-    imageHeight: '',
-    imagePath: '',
-    imageStyles: {},
-    imageWidth: '',
+    //imageAlt: '',
+    //imageClass: '',
+    //imageHeight: '',
+    //imagePath: '',
+    //imageStyles: {},
+    //imageWidth: '',
     title: '',
     titleStyles: {},
     sections: []
 };
 
 export const state: IntroductionState = {
-    imageAlt: '',
-    imageClass: '',
-    imageHeight: '',
-    imagePath: '',
-    imageStyles: {},
-    imageWidth: '',
+    //imageAlt: '',
+    //imageClass: '',
+    //imageHeight: '',
+    //imagePath: '',
+    //imageStyles: {},
+    //imageWidth: '',
     title: 'Introduction',
     titleStyles: {},
     sections: [

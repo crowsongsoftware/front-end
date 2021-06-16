@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { IntroductionRoutes } from './introduction.routes';
 import { HeaderModule } from '../../features/header/header.module';
+import { PrintModule } from '../../features/print/print.module';
 import { PrintIntroductionComponent } from './print-introduction/print-introduction.component';
 import { IntroductionComponent } from './introduction.component';
 import { IntroductionService } from './introduction.service';
@@ -18,6 +19,7 @@ import { DisplayIntroductionComponent } from './display-introduction/display-int
     imports: [ 
         CommonModule,
         HeaderModule,
+        PrintModule,
         RouterModule.forChild(IntroductionRoutes)
     ],
     exports: [ 

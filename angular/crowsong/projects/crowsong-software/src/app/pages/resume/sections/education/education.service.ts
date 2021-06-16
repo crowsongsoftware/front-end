@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Education } from './education';
+import { Education } from './types/education';
 import { EducationStore } from './education.store';
 
 @Injectable()
