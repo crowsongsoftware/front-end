@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { SelectSectionService } from './select-section.service';
+import { SelectSectionService } from '../select-section.service';
 import { Section } from './section';
 
 @Component({

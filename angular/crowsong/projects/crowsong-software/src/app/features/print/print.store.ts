@@ -1,9 +1,9 @@
 
 import { Store } from "../../state-management/store";
-import { SelectSection, selectSectionState } from "./print.state";
+import { PrintPageState, printPageState } from "./print.state";
 
-export class PrintStore extends Store<SelectSection>{
+export class PrintStore extends Store<PrintPageState>{
     constructor(){
-        super(selectSectionState);
+        super(printPageState);
     };
 }; 

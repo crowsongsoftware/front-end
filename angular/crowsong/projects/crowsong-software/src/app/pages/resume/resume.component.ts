@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NGXLogger } from 'ngx-logger';
-import { ResumeService } from './resume.service';
-import { EducationState } from './sections/education/education-state/education.state';
-import { ExperienceState } from './sections/experience/experience.state';
-import { HeadingState } from './state-management/heading/heading.state';
 
 /* TBD MenuState */
 import { MenuItem } from './sections/menu/types/menu-item';
@@ -14,19 +10,14 @@ import { MenuItem } from './sections/menu/types/menu-item';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
-  public education: EducationState;
-  public experience: ExperienceState;
-  public heading: HeadingState;
   
   /* Menu TBD MenuState */
   public menuContainerStyles: string = '';  
   public menuItems: Array<MenuItem> = []; 
-  
-  /* Skills */
 
   private setMenuState(){
-    this.menuContainerStyles = this.resumeService.State.menu.menuContainerStyles;
-    this.menuItems = this.resumeService.State.menu.menuItems;
+    //this.menuContainerStyles = this.resumeService.State.menu.menuContainerStyles;
+    //this.menuItems = this.resumeService.State.menu.menuItems;
   };
 
   private log(){
@@ -42,12 +33,9 @@ export class ResumeComponent implements OnInit {
     //this.logger.debug("menuItems: ", this.menuItems);
   };
 
-  constructor( private resumeService: ResumeService, 
+  constructor( 
                 private logger: NGXLogger) { 
                 this.setMenuState();
-                this.education = this.educationService.State;
-                this.experience = this.experienceService.State;
-                this.heading = this.headingService.State;
   };
 
   ngOnInit(): void {

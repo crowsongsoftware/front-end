@@ -15,7 +15,7 @@ type Experience = {
     details: Array<string>;
 };
 
-type PrintPage = {
+export type PrintState = {
     header: {
         name: string;
         title: string;
@@ -52,13 +52,13 @@ type Select = {
     checked: boolean
 };
 
-export type SelectSectionPage = {
+export type SelectSectionState = {
     title: string;
     titleStyles: string;
     selectSectionList: Array<Select>
 };
 
-export const selectSectionsState: SelectSectionPage = {
+export const selectSectionState: SelectSectionState = {
     title: `Select Resume Sections To Print`,
     titleStyles: `font-family: Arial;
                   font-size: 2vw;
@@ -72,7 +72,7 @@ export const selectSectionsState: SelectSectionPage = {
     ]
 };
 
-export const printPageState: PrintPage = {
+export const printState: PrintState = {
     header: {
         name: ``,
         title: ``,
