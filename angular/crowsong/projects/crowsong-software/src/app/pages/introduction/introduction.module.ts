@@ -30,5 +30,5 @@ import { DisplayIntroductionComponent } from './display-introduction/display-int
         IntroductionStore
     ]
 })
-export class CoverLetterModule { }
+export class IntroductionModule { }
 
