@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
-import { EducationState } from './education.state';
+import { Education } from './education';
 import { EducationStore } from './education.store';
 
 @Injectable()
 export class EducationService{
     constructor(private educationStore: EducationStore){};
     
-    public get State(): EducationState{
+    public get State(): Education{
         return this.educationStore.State;
     };
 
-    public set state(state: EducationState){
+    public set state(state: Education){
         this.educationStore.State = state;
     };
 };

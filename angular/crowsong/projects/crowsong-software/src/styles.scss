@@ -14,7 +14,6 @@ body{
     color: $app-font-color;
 };
 
-print-page,
 print-introduction, 
 print-resume{
     display: none;
@@ -29,7 +28,6 @@ print-resume{
         display: none;
     };
     
-    print-page,
     print-introduction,
     print-resume{
         display: block;

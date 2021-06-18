@@ -1,12 +1,10 @@
-
-import { Injectable } from "@angular/core";
+import { BehaviorSubject, Observable } from "rxjs";
 import { Store } from "../../../../state-management/store";
-import { EducationState, educationState } from "./education.state";
+import { Education } from "./education";
+import { educationState } from "./education.state";
 
-@Injectable()
-export class EducationStore extends Store<EducationState>{
+export class EducationStore extends Store<Education>{
     constructor(){
         super(educationState);
     };
 }; 
-

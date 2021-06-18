@@ -4,7 +4,12 @@
         [items]="menuItems"> 
     </app-menu>
 
-    <heading></heading>
+    <heading
+        [email]="email"
+        [name]="name"
+        [subtitle]= "subtitle"
+        [title]="title">
+    </heading>
     
     <router-outlet></router-outlet>
 </section>

@@ -7,8 +7,8 @@ import { EducationService } from './education.service';
 import { EducationStore } from './education.store';
 import { educationRoutes } from './education.routes';
 import { EducationComponent } from './education.component';
-import { InstitutionComponent } from './institution/institution.component';
-import { EducationListComponent } from './education-list/education-list.component';
+import { InstitutionComponent } from './presentation/institution/institution.component';
+import { EducationListComponent } from './presentation/education-list/education-list.component';
 
 @NgModule({
   declarations: [

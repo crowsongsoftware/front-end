@@ -9,8 +9,6 @@ import { IntroductionService } from './introduction.service';
 import { IntroductionStore } from './introduction.store';
 import { DisplayIntroductionComponent } from './display-introduction/display-introduction.component';
 
-//import { PrintModule } from '../../features/print/print.module';
-
 @NgModule({
     declarations: [
         IntroductionComponent,
@@ -21,7 +19,6 @@ import { DisplayIntroductionComponent } from './display-introduction/display-int
         CommonModule,
         HeaderModule,
         RouterModule.forChild(IntroductionRoutes)
-        //PrintModule,
     ],
     exports: [ 
         IntroductionComponent
@@ -31,5 +28,5 @@ import { DisplayIntroductionComponent } from './display-introduction/display-int
         IntroductionStore
     ]
 })
-export class IntroductionModule { }
+export class CoverLetterModule { }
 

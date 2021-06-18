@@ -1,12 +1,6 @@
-import { Institution } from "./types/institution";
+import { Education } from "./education";
 
-export type EducationState = {
-    title: string;
-    titleStyles: string;
-    institutions: Array<Institution>;
-};
-
-export const educationState: EducationState = {
+export const educationState: Education = {
     title: `Education`,
     titleStyles: `font-size: 1.75vw;
                   padding: .5vw;`,

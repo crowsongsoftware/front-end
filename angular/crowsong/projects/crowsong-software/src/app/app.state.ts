@@ -50,7 +50,7 @@ export const appState: AppState = {
                 image: '',
                 isDropdown: false,
                 text: "Introduction",
-                route: "/introduction",
+                route: "/cover-letter",
                 styles:`
                     color:black;
                     font-size:2vw;
@@ -59,7 +59,7 @@ export const appState: AppState = {
             },
             {
                 image: '',
-                isDropdown: false,
+                isDropdown: true,
                 text: "Resume",
                 route: "/resume",
                 styles:`
