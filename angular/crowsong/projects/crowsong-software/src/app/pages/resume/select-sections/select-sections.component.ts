@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormControl, Validators, FormArray} from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { SelectSectionService } from './select-section.service';
 
 @Component({
@@ -9,7 +9,6 @@ import { SelectSectionService } from './select-section.service';
 export class SelectSectionsComponent implements OnInit{
   public title: string = '';
   public titleStyles: string = '';
-  public form: FormGroup = this.formBuilder.group({});
   
   private setState(){
     let state = this.selectSectionService.State;
@@ -18,24 +17,29 @@ export class SelectSectionsComponent implements OnInit{
   };
 
   private log(){
-    console.log('form: ', this.form);
     console.log('title: ', this.title);
     console.log('titleStyles: ', this.titleStyles);
+  };
+  
+  public setupResume(form: NgForm){
+    console.log("Print Event from SelectSections..form: ", form);
+    this.print();
   };
 
   public onCheckboxChange(value: Event){
 
-  }
+  };
 
   public print(){
     window.print();
   };
 
-  constructor(private selectSectionService: SelectSectionService, private formBuilder: FormBuilder) {
+  constructor(private selectSectionService: SelectSectionService ) {
+    console.log('SelectSectionsComponent...constructor');
     this.setState();
    };
 
-   ngOnInit(){
+  ngOnInit(){
      this.log();
-   }
+  };
 };

@@ -4,13 +4,13 @@ import { SelectSectionStore } from './select-sections.store';
 
 @Injectable()
 export class SelectSectionService{
-    constructor(private educationStore: SelectSectionStore){};
+    constructor(private selectSectionStore: SelectSectionStore){};
     
     public get State(): SelectSection{
-        return this.educationStore.State;
+        return this.selectSectionStore.State;
     };
 
     public set state(state: SelectSection){
-        this.educationStore.State = state;
+        this.selectSectionStore.State = state;
     };
 };
