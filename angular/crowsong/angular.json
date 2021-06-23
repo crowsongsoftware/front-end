@@ -225,7 +225,6 @@
             "main": "projects/crowsong-messaging/src/main.ts",
             "polyfills": "projects/crowsong-messaging/src/polyfills.ts",
             "tsConfig": "projects/crowsong-messaging/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "projects/crowsong-messaging/src/favicon.ico",
               "projects/crowsong-messaging/src/assets"
@@ -233,7 +232,13 @@
             "styles": [
               "projects/crowsong-messaging/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -263,7 +268,8 @@
                 }
               ]
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -346,7 +352,6 @@
           "skipTests": true
         },
         "@schematics/angular:module": {
-          "skipTests": true
         },
         "@schematics/angular:pipe": {
           "skipTests": true
@@ -370,7 +375,6 @@
             "main": "projects/crowsong-software/src/main.ts",
             "polyfills": "projects/crowsong-software/src/polyfills.ts",
             "tsConfig": "projects/crowsong-software/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "projects/crowsong-software/src/favicon.ico",
               "projects/crowsong-software/src/assets"
@@ -378,7 +382,13 @@
             "styles": [
               "projects/crowsong-software/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -408,7 +418,8 @@
                 }
               ]
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -493,7 +504,6 @@
             "main": "projects/test-libraries/src/main.ts",
             "polyfills": "projects/test-libraries/src/polyfills.ts",
             "tsConfig": "projects/test-libraries/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "projects/test-libraries/src/favicon.ico",
               "projects/test-libraries/src/assets"
@@ -501,7 +511,13 @@
             "styles": [
               "projects/test-libraries/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -531,7 +547,8 @@
                 }
               ]
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
