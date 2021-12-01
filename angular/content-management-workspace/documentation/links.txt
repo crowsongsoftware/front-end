@@ -1,0 +1,2 @@
+AngularEditor
+https://openbase.com/js/@kolkov/angular-editor/documentation

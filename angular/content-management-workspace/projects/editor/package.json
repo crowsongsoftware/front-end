@@ -1,0 +1,12 @@
+{
+  "name": "editor",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^12.1.0",
+    "@angular/core": "^12.1.0"
+  },
+  "dependencies": {
+    "@kolkov/angular-editor": "^1.2.0",
+    "tslib": "^2.2.0"
+  }
+}

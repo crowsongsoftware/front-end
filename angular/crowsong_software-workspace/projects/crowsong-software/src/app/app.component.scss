@@ -1,0 +1,23 @@
+@import '../styles/partials/colors';
+
+.page {
+    display: grid;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/crow-background.png');
+    background-position: center;
+};
+
+.header{
+    background: radial-gradient(white, black);
+};
+
+.side-bar-image{
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+};
+
+.body{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+};

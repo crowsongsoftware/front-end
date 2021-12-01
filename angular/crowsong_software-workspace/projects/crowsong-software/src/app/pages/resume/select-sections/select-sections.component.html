@@ -1,0 +1,41 @@
+
+<section class="page">
+  <app-header
+      [title]="title"
+      [titleStyles]="titleStyles">
+  </app-header>
+
+  <form #selectSectionsForm="ngForm" (ngSubmit)="setupResume(selectSectionsForm)">
+    <table id="table">
+      <thead></thead>
+      <tfoot></tfoot>
+      <tbody>
+        <tr>
+          <td class="data-row">Heading</td>
+          <td class="data-row"><input type="checkbox" checked (change)="onCheckboxChange($event)" /></td>
+        </tr>
+        <tr>
+          <td class="data-row">Education</td>
+          <td class="data-row"><input type="checkbox" (change)="onCheckboxChange($event)" /></td>
+        </tr>
+        <tr>
+          <td class="data-row">Experience</td>
+          <td class="data-row"><input type="checkbox" (change)="onCheckboxChange($event)" /></td>
+        </tr>
+        <tr>
+          <td class="data-row">Skills</td>
+          <td class="data-row"><input type="checkbox" (change)="onCheckboxChange($event)" /></td>
+        </tr>
+        <tr>
+          <td class="data-row">Leadership</td>
+          <td class="data-row"><input type="checkbox" (change)="onCheckboxChange($event)" /></td>
+        </tr>
+      </tbody>
+    </table>
+      <button onclick="print()">Select</button>
+   </form>
+</section>
+  
+
+ 
+ 

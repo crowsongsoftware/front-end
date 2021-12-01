@@ -1,0 +1,94 @@
+{
+  "main": [
+    [
+      {
+        "text": "Home",
+        "route": "/home"
+      },
+      {
+        "text": "Cover Letter",
+        "route": "/cover-letter"
+      },
+      {
+        "text": "Resume",
+        "route": "/resume"
+      },
+      {
+        "text": "Portfolio",
+        "route": "/portfolio"
+      },
+      {
+        "text": "Contact",
+        "route": "/contact"
+      }
+    ],
+    [
+      {
+        "box-sizing": "border-box"
+      }
+    ],
+    [
+      {
+        "box-sizing": "border-box"
+      },
+      {
+        "color": "rgb(91,79,79)"
+      },
+      {
+        "display": "block"
+      },
+      {
+        "font-family": "Arial"
+      },
+      {
+        "font-size": "1.5vw"
+      }
+    ]
+  ],
+  "portfolio": [
+    [
+      {
+        "text": "Crowsong WCMS",
+        "route": "/wcms"
+      },
+      {
+        "text": "Crowsong Conference",
+        "route": "/conference"
+      },
+      {
+        "text": "Crowsong Recipe",
+        "route": "/recipe"
+      },
+      {
+        "text": "Crowsong Lounge",
+        "route": "/lounge"
+      },
+      {
+        "text": "Crowsong Vendor",
+        "route": "/vendor"
+      }
+    ],
+    [
+      {
+        "box-sizing": "border-box"
+      }
+    ],
+    [
+      {
+        "box-sizing": "border-box"
+      },
+      {
+        "color": "rgb(91,79,79)"
+      },
+      {
+        "display": "block"
+      },
+      {
+        "font-family": "Arial"
+      },
+      {
+        "font-size": "1.5vw"
+      }
+    ]
+  ]
+}

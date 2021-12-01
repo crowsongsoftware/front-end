@@ -1,0 +1,31 @@
+<section class="page">
+  <section class='header'>
+    <app-header
+      [imgStyles]="headerImageStyles"
+      [imgSrc]="headerImageSrc">
+    </app-header>
+  </section>
+    
+  <app-menu
+    [containerStyles]="menuContainerStyles"
+    [items]="menuItems">
+  </app-menu>
+
+  <section class=body>
+    <div class='side-bar-image'>
+      <lib-image [src]="featherImagePath"></lib-image>
+      <lib-image [src]="featherImagePath"></lib-image>
+      <lib-image [src]="featherImagePath"></lib-image>
+    </div>
+
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+
+    <div class='side-bar-image'>
+      <lib-image [src]="featherImagePath"></lib-image>
+      <lib-image [src]="featherImagePath"></lib-image>
+      <lib-image [src]="featherImagePath"></lib-image>
+    </div>
+  </section>
+</section>

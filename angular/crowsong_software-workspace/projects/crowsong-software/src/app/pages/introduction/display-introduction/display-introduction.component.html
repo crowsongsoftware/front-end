@@ -1,0 +1,9 @@
+<div class="content">
+    <button (click)="print()">Print</button>
+    <ng-container *ngFor="let section of sections">
+        <h1>{{section.heading}}</h1>
+        <ng-container *ngFor="let paragraph of section.paragraphs">
+            <p>{{paragraph}}</p>
+        </ng-container>
+    </ng-container>
+</div>

@@ -1,0 +1,15 @@
+.responsive-scale-both{
+    width: 100%;
+    height: auto;
+}
+
+.responsive-scale-down{
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-max-size{
+    width: 100%;
+    max-width: 400px;
+    height:auto;
+}

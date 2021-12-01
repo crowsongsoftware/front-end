@@ -1,0 +1,9 @@
+<section class='page'>
+    <div class='services'>
+        <div *ngFor="let item of services; index as i" class="service-{{i}}">{{item}}</div>    
+    </div>
+
+    <div class='banner'>
+        <a *ngFor="let item of banner; index as i" href="{{item.url}}"><img src="{{item.imgSrc}}" alt="{{item.imgAlt}}"></a>
+    </div>
+</section>

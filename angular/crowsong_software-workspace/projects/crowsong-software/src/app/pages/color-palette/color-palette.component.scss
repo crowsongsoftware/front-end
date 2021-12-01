@@ -1,0 +1,69 @@
+@import '../../../styles/partials/colors';
+
+.title{
+    background-color: transparent;
+};
+
+.color-pallette{
+    font-size: 3vw;
+};
+
+.turquoise-on-black{
+    background-color: $black;
+    color:$turquoise;
+};
+
+.black-on-turquoise{
+    background-color: $turquoise;
+    color:$black;
+};
+
+.gulf-stream-on-black{
+    background-color: $black;
+    color:$gulf_stream;
+};
+
+.black-on-gulf-stream{
+    background-color: $gulf_stream;
+    color:$black;
+};
+
+.maroon-on-black{
+    background-color: $black;
+    color:$maroon;
+};
+
+.black-on-maroon{
+    background-color: $maroon;
+    color:$black;
+};
+
+.black-on-dark-red{
+    background-color: $dark_red;
+    color:$black;
+};
+
+.dark-red-on-black{
+    background-color: $black;
+    color:$dark_red;
+};
+
+.black-on-rose-taupe{
+    background-color: $rose_taupe;
+    color:$black;
+};
+
+.rose-taupe-on-black{
+    background-color: $black;
+    color:$rose_taupe;
+};
+
+.black-on-rose-taupe{
+    background-color: $rose_taupe;
+    color:$black;
+};
+
+.rose-taupe-on-black{
+    background-color: $black;
+    color:$rose_taupe;
+};
