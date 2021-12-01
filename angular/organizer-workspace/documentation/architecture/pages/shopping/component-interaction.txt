@@ -1,0 +1,28 @@
+models
+    type item = {
+        title: string;
+        itemPrice: integer;
+        quanity: integer;
+        onHand: integer;
+    };
+
+---------------------------
+shopping.page.ts
+    items: array<item>;
+---------------------------
+
+    ---------------------------------
+    product.component.ts
+        Input() items: array<item>;
+    ---------------------------------            |
+
+        ---------------------------------  ---------------------------------
+        product-list.component.ts          product-detail.component.ts
+            Input() items: array<item>;         Input() items: array<item>;
+        ---------------------------------  ---------------------------------
+    
+
+
+
+
+

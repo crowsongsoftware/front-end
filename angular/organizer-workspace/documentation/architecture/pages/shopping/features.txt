@@ -1,0 +1,11 @@
+Shopping Features
+---------------------------------------
+- shopping list of all products
+- shopping list for a recipe
+- detail of product to buy
+
+Shopping services
+----------------------------------------
++ uses RecipeService
+- ShoppingService
+

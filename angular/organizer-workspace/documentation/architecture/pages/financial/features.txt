@@ -1,0 +1,11 @@
+Institution Features
+---------------------------------------
+- list of all institutions
+- institution details
+
+Instituion services
+----------------------------------------
++ ShoppingService
+- LoggingService
+- AuthenticationService
+

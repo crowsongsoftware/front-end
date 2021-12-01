@@ -1,0 +1,7 @@
+Progressive Web apps 
+- https://www.simicart.com/blog/progressive-web-apps-examples/
+
+electron
+- https://www.c-sharpcorner.com/article/create-angular-desktop-app-using-electron/
+
+angular-pwa

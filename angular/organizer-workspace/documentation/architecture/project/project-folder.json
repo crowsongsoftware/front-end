@@ -1,0 +1,38 @@
+{
+    "app":{
+        "nodeType": "folder",
+        "modules":{
+            "nodeType": "folder",
+            "core": {
+                "nodeType": "folder",
+                "core.module.ts":{
+                    "nodeType": "module",
+                    "authentication.service.ts": {
+                        "nodeType": "service"
+                    },
+                    "logging.service.ts": {
+                        "nodeType": "service"
+                    },
+                    "test.service.ts": {
+                        "nodeType": "service"
+                    }
+                }
+            },
+            "routedModules":{
+    
+            }
+        },
+        "app.module.ts": {
+            "nodeType": "Module"
+        },
+        "app.component.ts": {
+            "nodeType": "component"
+        },
+        "app.service.ts": {
+            "nodeType": "service"
+        },
+        "app.state.ts": {
+            "nodeType": "state"
+        }
+    }
+}

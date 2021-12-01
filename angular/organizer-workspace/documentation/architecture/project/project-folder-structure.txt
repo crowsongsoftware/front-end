@@ -1,0 +1,53 @@
++ app
+  + core //shared services, imported in root 
+    + logging
+        - logging.service.ts
+    + authentication
+        - authentication.service.ts
+  + pages // routed modules
+    + calendar
+      - calendar.module.ts
+      - calendar.page.ts //entry page
+      - calendar.service.ts
+      - calendar.state.ts
+        + feature modules
+          - .module.ts
+          - .component.ts // presentation component
+          - .component.ts // presentation
+    + home
+        - home.module.ts
+        - home.page.ts // entry page
+        - home.service.ts
+        - home.state.ts
+            {
+                title: string;
+                image: string;
+            }
+        + feature modules
+            - title.module.ts
+            - text.component.ts // presentation component
+            - image.component.ts // presentation component
+    + meal planner
+	- meal-planner.module.ts
+	- meal-planner.component.ts
+	- meal-planner.service.ts
+	- meal-planner.state.ts
+	  + feature modules	  
+    	    + shopping planner
+              - shopping.module.ts
+              - shopping.page.ts //entry page 
+              - shopping.service.ts
+              - shopping.state.ts
+        	+ feature modules	
+                  - .module.ts
+            	  - .component.ts // presentation component 
+                  - .component.ts // presentation       
+    + task planner
+        - tasks.module.ts
+        - tasks.page.ts // entry component
+        - tasks.service.ts
+        - tasks.state.ts
+         + feature modules
+            - .module.ts
+            - .component.ts // presentation component
+            - .component.ts // presentation component

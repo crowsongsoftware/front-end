@@ -1,0 +1,36 @@
+models
+    type account = {
+        type: string;
+        balance: string;
+    };
+
+    type institution = {
+        name: string;
+        category: string;
+        address: string;
+        phone: string;
+        accounts: array<account>;
+    };
+
+---------------------------
+financial.page.ts
+    title: string;
+    image: string;
+    menu: array<string>;
+---------------------------
+
+    ---------------------------------
+    product.component.ts
+        Input() items: array<item>;
+    ---------------------------------            |
+
+        ---------------------------------  ---------------------------------
+        product-list.component.ts          product-detail.component.ts
+            Input() items: array<item>;         Input() items: array<item>;
+        ---------------------------------  ---------------------------------
+    
+
+
+
+
+
