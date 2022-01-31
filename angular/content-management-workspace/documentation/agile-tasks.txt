@@ -1,0 +1,14 @@
+Story: Set up project
+Task: Install and setup Firebase
+Task: Setup Firebase database
+Task: Setup project 
+
+Epic: Setup project core
+Story: Create routing
+Story: Create services
+Story: Create guards
+Story: Create piples
+Story: Create utilities
+
+Epic: Create Admin panel 
+Epic: Create User panel

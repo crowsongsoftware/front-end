@@ -1,2 +1,5 @@
 AngularEditor
+----------------------------------------------------------------------------------
 https://openbase.com/js/@kolkov/angular-editor/documentation
+https://javascript.plainenglish.io/create-a-cms-with-angular-firebase-8ecdf0dd63d9
+https://javascript.plainenglish.io/create-a-cms-with-angular-firebase-153e48d911a1
