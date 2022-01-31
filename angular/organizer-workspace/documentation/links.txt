@@ -3,5 +3,11 @@ Progressive Web apps
 
 electron
 - https://www.c-sharpcorner.com/article/create-angular-desktop-app-using-electron/
+- https://www.geekstrick.com/best-way-to-convert-angular-10-to-desktop-app-using-electronjs/
 
 angular-pwa
+- https://www.simicart.com/blog/pwa-vs-electron/
+
+electron-pwa-native
+- https://www.simicart.com/blog/pwa-vs-electron/
+- https://www.simicart.com/blog/progressive-web-apps-vs-native/#Native_Apps-2

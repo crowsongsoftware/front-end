@@ -1,0 +1,4 @@
+https://blog.bitsrc.io/announcing-bit-with-angular-public-beta-578cbb173690
+https://harmony-docs.bit.dev/resources/articles/
+https://betterprogramming.pub/bit-harmony-a-new-tool-to-create-and-collaborate-on-independent-node-js-components-f871658edcb6
+https://blog.bitsrc.io/how-to-share-angular-components-between-project-and-apps-5eb0600d99d2

@@ -1,0 +1,4 @@
+https://medium.com/ngconf/dynamic-component-generation-in-lazy-loaded-routes-d2e0f9e89c57
+https://stackblitz.com/edit/dynamic-routes-lazy-loaded?file=app%2Fmodules%2Fgeneral%2Fgeneral.component.ts
+
+

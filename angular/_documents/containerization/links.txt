@@ -1,1 +1,2 @@
 https://azure.microsoft.com/en-us/topic/kubernetes-vs-docker/
+- https://blog.mayadata.io/openebs/steps-to-deploy-angular-application-on-kubernetes

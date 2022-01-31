@@ -1,0 +1,2 @@
+https://medhatdawoud.net/blog/paths-and-baseUrl-in-tsconfig.json
+https://github.com/microsoft/TypeScript/issues/39411

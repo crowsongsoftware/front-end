@@ -1,0 +1,162 @@
+{
+    "collections": [
+        {
+            "quickLinks":[
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "roasting": {
+                "vegetables": [
+                    {
+                        "name": "asperagus",
+                        "time": "10 minutes",
+                        "temperature": "400F"
+                    },
+                    {
+                        "name": "broccoli",
+                        "time": "20 minutes",
+                        "temperature": "400F"
+                    },
+                    {
+                        "name": "brussel sprouts",
+                        "time": "20 minutes",
+                        "temperature": "400"
+                    },
+                    {
+                        "name": "green beans",
+                        "time": "15 minutes",
+                        "temperature": "420F"
+                    },
+                    {
+                        "name": "bell peppers",
+                        "time": "20 minutes",
+                        "temperature": "450F"
+                    }
+                ],
+                "poultry": [
+                    {
+                        "chicken": [
+                            {
+                                "size": "12lbs",
+                                "time": "",
+                                "temperature": ""
+                            },
+                            {
+                                "size": "14lbs",
+                                "time": "",
+                                "temperature": ""
+                            }
+                        ]
+                    },
+                    {
+                        "turkey": [
+                            {
+                                "size": "12lbs",
+                                "time": "",
+                                "temperature": ""
+                            },
+                            {
+                                "size": "14lbs",
+                                "time": "",
+                                "temperature": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "baking": {
+                "breads": [],
+                "cakes": [],
+                "cookies": [],
+                "muffins": [],
+                "pizza": [
+                    {
+                        "id": "piz01",
+                        "title": "Basic Pizza Dough",
+                        "image": "",
+                        "description": "",
+                        "ingredients": [
+                            {
+                                "ingredient": "all purpose flour",
+                                "units": [
+                                    {
+                                        "unit": "cups",
+                                        "amount": "2"
+                                    },
+                                    {
+                                        "unit": "grams",
+                                        "amount": "250"
+                                    }
+                                ]
+                            },
+                            {
+                                "ingredient": "instant yeast",
+                                "units": [
+                                    {
+                                        "unit": "packet",
+                                        "amount": "1"
+                                    },
+                                    {
+                                        "unit": "tsp",
+                                        "amount": "2.25"
+                                    }
+                                ]
+                            },
+                            {
+                                "ingredient": "sugar",
+                                "units": [
+                                    {
+                                        "unit": "tsp",
+                                        "amount": "1.5"
+                                    }
+                                ]
+                            },
+                            {
+                                "ingredient": "salt",
+                                "units": [
+                                    {
+                                        "unit": "tsp",
+                                        "amount": "2.25"
+                                    }
+                                ]
+                            },
+                            {
+                                "ingredient": "garlic powder",
+                                "units": [
+                                    {
+                                        "unit": "tsp",
+                                        "amount": "0.25"
+                                    }
+                                ],
+                                "notes": [
+                                    "optional"
+                                ]
+                            },
+                            "⅛-¼ teaspoon garlic powder and/or dried basil leaves optional",
+                            {
+                                "ingredient": "dried basil leaves",
+                                "units": [
+                                    {
+                                        "unit": "tsp",
+                                        "amount": "0.25"
+                                    }
+                                ],
+                                "notes": [
+                                    "optional"
+                                ]
+                            }
+                        ],
+                        "directions": [
+                            "Combine 1 cup (125g) of flour, instant yeast, sugar, and salt in a large bowl. If desired, add garlic powder and dried basil at this point as well."
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
