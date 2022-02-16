@@ -28,18 +28,6 @@
             "tsConfig": "projects/crowsong/default/tsconfig.spec.json",
             "karmaConfig": "projects/crowsong/default/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/crowsong/default/tsconfig.lib.json",
-              "projects/crowsong/default/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     },
@@ -140,19 +128,6 @@
               "projects/default/src/styles.scss"
             ],
             "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/default/tsconfig.app.json",
-              "projects/default/tsconfig.spec.json",
-              "projects/default/e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         },
         "e2e": {
@@ -266,19 +241,6 @@
               "projects/tailwind/src/styles.scss"
             ],
             "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/tailwind/tsconfig.app.json",
-              "projects/tailwind/tsconfig.spec.json",
-              "projects/tailwind/e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         },
         "e2e": {

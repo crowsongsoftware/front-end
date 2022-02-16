@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FinancialComponent } from './financial.component';
-import { InstitutionComponent } from './modules/page/institution/institution.component';
+import { InstitutionModule } from './modules/page/institution/institution.module';
 
 
 @NgModule({
   declarations: [
-    FinancialComponent,
-    InstitutionComponent
+    FinancialComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    InstitutionModule
   ],
   exports: [
     FinancialComponent
