@@ -1,0 +1,1 @@
+{"version":3,"file":"navigation.d.ts","sourceRoot":"","sources":["../../../../projects/crowsong/navigation/src/lib/navigation.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,WAAW;IACxB,eAAe,EAAE,MAAM,CAAC;IACxB,UAAU,EAAE,MAAM,CAAC;IACnB,KAAK,EAAE,CAAC;QAAE,IAAI,EAAE,MAAM,CAAC;QAAC,KAAK,EAAE,MAAM,CAAA;KAAC,CAAC,CAAC;CAC3C"}

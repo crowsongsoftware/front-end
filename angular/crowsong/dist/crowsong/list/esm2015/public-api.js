@@ -1,0 +1,6 @@
+/*
+ * Public API Surface of list
+ */
+export * from './lib/list.component';
+export * from './lib/list.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3Byb2plY3RzL2Nyb3dzb25nL2xpc3Qvc3JjL3B1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFDSCxjQUFjLHNCQUFzQixDQUFDO0FBQ3JDLGNBQWMsbUJBQW1CLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxyXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2YgbGlzdFxyXG4gKi9cclxuZXhwb3J0ICogZnJvbSAnLi9saWIvbGlzdC5jb21wb25lbnQnO1xyXG5leHBvcnQgKiBmcm9tICcuL2xpYi9saXN0Lm1vZHVsZSc7XHJcbiJdfQ==
